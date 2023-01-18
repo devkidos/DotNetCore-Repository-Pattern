@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">User</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card"> 
+    <div class="card-body"> 
+        <div class="box-header with-border">
+            <div style="float: left;">
+                <div class="alert-container-fixed">
+                    <alerts></alerts> 
+                </div>
+            </div>
+           @* <div style="float: right;">
+                @Html.ActionLink("Add New", "Create", null,  null, new {@class = "btn btn-primary" })
+            </div>*@
+        </div>
+       <div style="height:70px"></div>
+       <div>
+        <table id="myTable" class="table table-bordered table-striped" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>User Name</th> 
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>Action</th>
+
+                    </tr>
+                </thead>
+            </table>
+         </div>
+    </div> 
+</div>
+
+<script src="~/js/User.js"></script>

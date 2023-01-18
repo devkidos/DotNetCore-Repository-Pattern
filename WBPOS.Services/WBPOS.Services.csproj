@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+		<PackageReference Include="DevKido.Utilities.Core" Version="1.0.0.1" /> 
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.26" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.4" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
+		<PackageReference Include="System.Net.Http.Formatting.Extension" Version="5.2.3" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\WBPOS.Data\WBPOS.Data.csproj" />
+	  <ProjectReference Include="..\WBPOS.Entities\WBPOS.Entities.csproj" />
+	  <ProjectReference Include="..\WBPOS.ViewModel\WBPOS.ViewModel.csproj" />
+	</ItemGroup>
+	
+</Project>
